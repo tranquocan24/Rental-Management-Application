@@ -15,6 +15,8 @@ public class Tenant {
         System.out.println("Rental contract requested for tenant: " + user.getUserID());
     }
 
+
+
     public void requestTerminateRentalContract(RentalContract contract) {
         if (listOfContracts.remove(contract)) {
             System.out.println("Rental contract terminated for tenant: " + user.getUserID());
