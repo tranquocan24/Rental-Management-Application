@@ -18,7 +18,11 @@ public class RentalContract {
 
     public String getContractID() {
         return contractID;
-    }
+    } 
+
+
+
+    
 
     public double getRentAmount() {
         return rentAmount;
