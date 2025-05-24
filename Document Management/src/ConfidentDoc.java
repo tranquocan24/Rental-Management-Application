@@ -2,12 +2,12 @@ public class ConfidentDoc extends DocumentBuilder {
 
     @Override
     public void setEncryption() {
-        doc.setEncryption("ABD-2099#@$");
+        doc.setEncryption("AES");
     }
 
     @Override
     public void setExtension() {
-        doc.setExtension(".enc");
+        doc.setExtension(".zip");
     }
 
 }
