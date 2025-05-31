@@ -11,7 +11,7 @@ public class lowPriorityConcrete implements requestProduct {
         setStatus();
         setExpire();
         System.out.println("Request denied");
-
+        printInfo();
     }
 
     @Override
@@ -30,6 +30,30 @@ public class lowPriorityConcrete implements requestProduct {
     public void setStatus() {
         this.status = "Done";
 
+    }
+
+    private void printInfo() {
+        System.out.println("Priority: " + priority);
+        System.out.println("Status: " + status);
+        System.out.println("Expire Day: " + expireDate);
+    }
+
+    @Override
+    public String getExpire() {
+        // TODO Auto-generated method stub
+        return expireDate;
+    }
+
+    @Override
+    public String getPriority() {
+        // TODO Auto-generated method stub
+        return priority;
+    }
+
+    @Override
+    public String getStatus() {
+        // TODO Auto-generated method stub
+        return status;
     }
 
 }
